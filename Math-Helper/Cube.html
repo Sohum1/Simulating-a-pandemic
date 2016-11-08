@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Cube giver</title>
+		<style>                   
+		body {
+			font-family: cursive; 
+			background-color:ghostwhite;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Give any number and we will give you it's cube!</h1>
+		<input id = "inp" type = "number">
+		<button onclick = "func();">Get it</button>
+		<h2 id = "r"></h2>
+	<script>
+	 function func() {
+		var d = document.getElementById('inp').value; 
+		var r = document.getElementById('r').innerHTML = d * d * d;
+	 };
+	</script>
+	</body>
+</html>
